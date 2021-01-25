@@ -1,0 +1,92 @@
+#nav_bar-behind{
+    height: 100%;
+    width: 50px;
+    background-color: #31353D;
+}
+.nav_bar-behind-images{
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -2px;
+}
+.nav_bar-behind-images span{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.tooltip > .menu-contenido-images:hover{
+    cursor: pointer;
+}
+.tooltip > .menu-contenido-images img:hover{
+    width: 43px;
+}
+.nav_bar-behind-menu{
+    display: flex;
+    justify-content: center;
+}
+.nav_bar-behind-menu:hover{
+    cursor: pointer;
+}
+.nav_bar-behind-menu img{
+    width: 35px;
+}
+.nav_bar-behind-menu img:hover{
+    width: 38px;
+}
+.close{
+    display: none;
+}
+@media (max-width: 576px) and (orientation: landscape){
+    .tooltip > .menu-contenido-images img:hover{
+        width: 27px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape){
+    .tooltip > .menu-contenido-images img:hover{
+        width: 27px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+    .tooltip > .menu-contenido-images img:hover{
+        width: 27px;
+    }
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    justify-content: center;
+    visibility: hidden;
+    width: 85px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
